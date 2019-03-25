@@ -41,7 +41,7 @@ export default {
       margin-left: .2rem
       padding-left: .2rem
       background: #fff
-      border-radios: .1rem
+      border-radius: .1rem
       color: #ccc
     .header-right
       width: 1.04rem
