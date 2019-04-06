@@ -6,7 +6,7 @@
       class="header-abs"
       v-show="showAbs"
     >
-      <span class="iconfont header-abs-back">&#xe624;</span>
+      <div class="iconfont header-abs-back">&#xe624;</div>
     </router-link>
     <div
       class="header-fixed"
@@ -45,10 +45,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  unmounted () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
